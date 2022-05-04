@@ -1,0 +1,5 @@
+epochs=100
+lr=0.1
+max-score=0.96875
+avg-score==0.95890625
+last-loss==0.11504627640370468
