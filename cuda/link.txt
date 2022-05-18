@@ -1,0 +1,5 @@
+software for parallel programming for gpu
+
+
+https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1604&target_type=runfilelocal
+command for extraction:sudo sh cuda_10.0.130_410.48_linux.run

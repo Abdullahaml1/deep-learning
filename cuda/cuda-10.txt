@@ -1,0 +1,32 @@
+link: https://developer.nvidia.com/cuda-10.0-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1804&target_type=deblocal
+
+
+we will use dep (local) method
+
+1-remvoal of previous version: https://askubuntu.com/questions/530043/removing-nvidia-cuda-toolkit-and-installing-new-one
+
+2-dowload the cuda .dep file
+
+3-commands
+$sudo dpkg -i cuda-repo-ubuntu1804-10-0-local-10.0.130-410.48_1.0-1_amd64.deb
+$sudo apt-key add /var/cuda-repo-10-0-local-10.0.130-410.48/7fa2af80.pub           , we will replace <version> by 10-0-local
+$sudo apt-get update
+$sudo apt-get install -y cuda-10-0=10.0.130-1
+
+
+4-export cuda's libraries, and path
+	copy these comand to .bashrc file
+    $export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
+    $export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64:$LD_LIBRARY_PATH
+
+5-verfy instlation
+ $nvidia-smi
+ $nvcc -V
+
+
+
+useful link:https://devtalk.nvidia.com/default/topic/1026327/cuda-setup-and-installation/unable-to-install-cuda-in-ubuntu-16-04-in-any-way/
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<Read The link Carfully>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+for remval: https://askubuntu.com/questions/530043/removing-nvidia-cuda-toolkit-and-installing-new-one

@@ -1,0 +1,16 @@
+The easiest way:
+$ sudo apt-get install nvidia-tool-kit
+source: https://linuxconfig.org/how-to-install-cuda-on-ubuntu-20-04-focal-fossa-linux
+-------------------------------------------------------------
+1- the easiset way to use (dep)network method
+https://developer.nvidia.com/cuda-90-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1604&target_type=debnetwork
+
+
+1-installation guide: https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#ubuntu-installation
+
+2-verfy installation: https://xcat-docs.readthedocs.io/en/stable/advanced/gpu/nvidia/verify_cuda_install.html
+
+
+3-
+$ export PATH=/usr/local/cuda-7.0/bin:$PATH
+$ export LD_LIBRARY_PATH=/usr/local/cuda-7.0/lib64:$LD_LIBRARY_PATH

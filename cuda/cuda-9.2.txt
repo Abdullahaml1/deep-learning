@@ -1,0 +1,27 @@
+link: https://developer.nvidia.com/cuda-92-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1604&target_type=deblocal
+
+we will use dep (local) method
+
+1-dowload the cuda .dep file
+2-commands
+sudo dpkg -i cuda-repo-ubuntu1604-9-2-local_9.2.148-1_amd64.deb
+sudo apt-key add /var/cuda-repo-<version>/7fa2af80.pub              , we will replace <version> by 9-2-local
+sudo apt-get update
+sudo apt-get install -y cuda-9-2=9.2.148-1
+
+
+3-export cuda's libraries, and path
+	copy these comand to .bashrc file
+    $export PATH=/usr/local/cuda-9.2/bin${PATH:+:${PATH}}
+    $export LD_LIBRARY_PATH=/usr/local/cuda-9.2/lib64:$LD_LIBRARY_PATH
+
+4-verfy instlation
+ $nvidia-smi
+
+
+
+useful link:https://devtalk.nvidia.com/default/topic/1026327/cuda-setup-and-installation/unable-to-install-cuda-in-ubuntu-16-04-in-any-way/
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<Read The link Carfully>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+for remval: https://askubuntu.com/questions/530043/removing-nvidia-cuda-toolkit-and-installing-new-one
