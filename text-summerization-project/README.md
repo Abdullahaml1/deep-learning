@@ -5,6 +5,6 @@ We are Implementing this paper [Text Summarization with Pretrained Encoders](htt
 
 # work Progress
 
-[-] prepare the dataset
-[-] construct the model
-[-] Fine-tune BERT
+* [ ] prepare the dataset
+* [ ] construct the model
+* [ ] Fine-tune BERT
